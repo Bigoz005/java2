@@ -32,28 +32,40 @@ public class Main {
 
         for (int i = 0; i < number.length(); i++) {
             char c = number.charAt(i);
-            if (c == '-') {
+            switch (c)
+            case (c == '-'):
                 wynik.append("minus ");
-            } else if (c == '1') {
+                break;
+            case (c == '1'):
                 wynik.append("jeden ");
-            } else if (c == '2') {
+                break;
+            case (c == '2'):
                 wynik.append("dwa ");
-            } else if (c == '3') {
+                break;
+            case (c == '3'):
                 wynik.append("trzy ");
-            } else if (c == '4') {
+                break;
+            case: (c == '4'):
                 wynik.append("cztery ");
-            } else if (c == '5') {
+                break;
+            case (c == '5'):
                 wynik.append("pięć ");
-            } else if (c == '6') {
+                break;
+            case (c == '6'):
                 wynik.append("sześć ");
-            } else if (c == '7') {
+                break;
+            case (c == '7'):
                 wynik.append("siedem ");
-            } else if (c == '8') {
+                break;
+            case (c == '8'):
                 wynik.append("osiem ");
-            } else if (c == '9') {
+                break;
+            case (c == '9'):
                 wynik.append("dziewięć ");
-            } else if (c == '0') {
+                break;
+            case (c == '0'):
                 wynik.append("zero ");
+                break;
             }
         }
         JOptionPane.showMessageDialog(null, wynik.toString());
