@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-03T23:06:25.760761900Z</date>
+  <millis>1541286385760</millis>
+  <nanos>761900</nanos>
+  <sequence>0</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 1 Kaplita: 344s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:28.072052300Z</date>
+  <millis>1541286388072</millis>
+  <nanos>52300</nanos>
+  <sequence>1</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 2 Pawliczak: 299s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:30.473236100Z</date>
+  <millis>1541286390473</millis>
+  <nanos>236100</nanos>
+  <sequence>2</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 3 Sulowski: 346s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:32.872258100Z</date>
+  <millis>1541286392872</millis>
+  <nanos>258100</nanos>
+  <sequence>3</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 4 Byrczek: 312s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:35.272780800Z</date>
+  <millis>1541286395272</millis>
+  <nanos>780800</nanos>
+  <sequence>4</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 5 Głuchowski: 302s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:37.672970600Z</date>
+  <millis>1541286397672</millis>
+  <nanos>970600</nanos>
+  <sequence>5</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 6 Buchowski: 251s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:40.072454600Z</date>
+  <millis>1541286400072</millis>
+  <nanos>454600</nanos>
+  <sequence>6</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 7 Słupik: 266s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:42.472458Z</date>
+  <millis>1541286402472</millis>
+  <nanos>458000</nanos>
+  <sequence>7</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 8 Kopański: 330s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:44.872102400Z</date>
+  <millis>1541286404872</millis>
+  <nanos>102400</nanos>
+  <sequence>8</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 9 Cecotka: 298s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:47.272432200Z</date>
+  <millis>1541286407272</millis>
+  <nanos>432200</nanos>
+  <sequence>9</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 10 Milka: 289s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:49.688326900Z</date>
+  <millis>1541286409688</millis>
+  <nanos>326900</nanos>
+  <sequence>10</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 11 Hajduczek: 298s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:52.073403500Z</date>
+  <millis>1541286412073</millis>
+  <nanos>403500</nanos>
+  <sequence>11</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 12 Gunia: 309s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:54.471900600Z</date>
+  <millis>1541286414471</millis>
+  <nanos>900600</nanos>
+  <sequence>12</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 13 Śmieciuch: 274s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:56.872997600Z</date>
+  <millis>1541286416872</millis>
+  <nanos>997600</nanos>
+  <sequence>13</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 14 Siewiorek: 311s</message>
+</record>
+<record>
+  <date>2018-11-03T23:06:59.273727300Z</date>
+  <millis>1541286419273</millis>
+  <nanos>727300</nanos>
+  <sequence>14</sequence>
+  <logger></logger>
+  <level>FINE</level>
+  <class>com.company.Wyscig</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>Zawodnik nr 15 Firlej: 349s</message>
+</record>
+</log>
