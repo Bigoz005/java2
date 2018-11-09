@@ -42,7 +42,7 @@ public class Cyclist extends Observable implements Comparable<Cyclist> {
 
     private void updateTime()
     {
-        if(Finished())
+        if(NotFinished())
             time++;
         else {
             setChanged();
@@ -51,10 +51,10 @@ public class Cyclist extends Observable implements Comparable<Cyclist> {
         }
     }
 
-    public boolean Finished()
+    public boolean  NotFinished()
     {
         return time < endTime;
-}
+    }
 
     @Override
     public String toString()

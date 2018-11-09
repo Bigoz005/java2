@@ -1,0 +1,64 @@
+lis 09, 2018 9:31:14 AM com.company.Tournament startTournament
+INFO: Start
+lis 09, 2018 9:31:14 AM com.company.Tournament$1 run
+INFO: Strugarek ruszyl
+lis 09, 2018 9:31:16 AM com.company.Tournament$1 run
+INFO: Szyndler ruszyl
+lis 09, 2018 9:31:18 AM com.company.Tournament$1 run
+INFO: Freus ruszyl
+lis 09, 2018 9:31:21 AM com.company.Tournament$1 run
+INFO: Antkowiak ruszyl
+lis 09, 2018 9:31:23 AM com.company.Tournament$1 run
+INFO: Blacha ruszyl
+lis 09, 2018 9:31:25 AM com.company.Tournament update
+INFO: Strugarek ukonczyl
+lis 09, 2018 9:31:26 AM com.company.Tournament$1 run
+INFO: Ogiela ruszyl
+lis 09, 2018 9:31:27 AM com.company.Tournament update
+INFO: Szyndler ukonczyl
+lis 09, 2018 9:31:28 AM com.company.Tournament$1 run
+INFO: Kurek ruszyl
+lis 09, 2018 9:31:30 AM com.company.Tournament$1 run
+INFO: Ożarowski ruszyl
+lis 09, 2018 9:31:32 AM com.company.Tournament update
+INFO: Freus ukonczyl
+lis 09, 2018 9:31:33 AM com.company.Tournament$1 run
+INFO: Foszcz ruszyl
+lis 09, 2018 9:31:34 AM com.company.Tournament update
+INFO: Antkowiak ukonczyl
+lis 09, 2018 9:31:35 AM com.company.Tournament$1 run
+INFO: Sieńko ruszyl
+lis 09, 2018 9:31:36 AM com.company.Tournament update
+INFO: Ogiela ukonczyl
+lis 09, 2018 9:31:36 AM com.company.Tournament update
+INFO: Blacha ukonczyl
+lis 09, 2018 9:31:38 AM com.company.Tournament$1 run
+INFO: Czucha ruszyl
+lis 09, 2018 9:31:40 AM com.company.Tournament$1 run
+INFO: Łuczywek ruszyl
+lis 09, 2018 9:31:41 AM com.company.Tournament update
+INFO: Kurek ukonczyl
+lis 09, 2018 9:31:42 AM com.company.Tournament$1 run
+INFO: Góralczyk ruszyl
+lis 09, 2018 9:31:43 AM com.company.Tournament update
+INFO: Ożarowski ukonczyl
+lis 09, 2018 9:31:44 AM com.company.Tournament update
+INFO: Foszcz ukonczyl
+lis 09, 2018 9:31:45 AM com.company.Tournament$1 run
+INFO: Kościuszko ruszyl
+lis 09, 2018 9:31:47 AM com.company.Tournament$1 run
+INFO: Tesmer ruszyl
+lis 09, 2018 9:31:48 AM com.company.Tournament update
+INFO: Sieńko ukonczyl
+lis 09, 2018 9:31:50 AM com.company.Tournament update
+INFO: Łuczywek ukonczyl
+lis 09, 2018 9:31:51 AM com.company.Tournament update
+INFO: Czucha ukonczyl
+lis 09, 2018 9:31:54 AM com.company.Tournament update
+INFO: Góralczyk ukonczyl
+lis 09, 2018 9:31:56 AM com.company.Tournament update
+INFO: Kościuszko ukonczyl
+lis 09, 2018 9:32:00 AM com.company.Tournament update
+INFO: Tesmer ukonczyl
+lis 09, 2018 9:32:00 AM com.company.Tournament update
+INFO: koniec wyscigu

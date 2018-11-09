@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 import java.util.Timer;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -14,6 +15,7 @@ public class Tournament implements Observer {
     private static PriorityQueue<Cyclist> cyclistQueue;
     private JLabel[][] cyclistsLabels;
     private Logger logger;
+    private int j = 0;
 
     Tournament(JLabel[][] cyclistsLabels) {
         this.cyclistsLabels = cyclistsLabels;
@@ -78,14 +80,41 @@ public class Tournament implements Observer {
             ArrayList<Cyclist> tmp = new ArrayList<>();
 
             for (int i = 0; i < Math.min(3, cyclistQueue.size()); i++) {
-                if (cyclistQueue.isEmpty())
+                if (cyclistQueue.isEmpty()) {
                     break;
+                }
                 tmp.add(cyclistQueue.poll());//dodanie do listy
-                cyclistsLabels[i][0].setText(tmp.get(i).getName());
-                cyclistsLabels[i][1].setText(tmp.get(i).getTime() + "s");
+                if (tmp.size() == 1) {
+                    cyclistsLabels[0][0].setText(tmp.get(0).getName());
+                    cyclistsLabels[0][1].setText(tmp.get(0).getTime() + "s");
+                }
+                if (tmp.size() == 2) {
+                    cyclistsLabels[0][0].setText(tmp.get(0).getName());
+                    cyclistsLabels[0][1].setText(tmp.get(0).getTime() + "s");
+                    cyclistsLabels[1][0].setText(tmp.get(1).getName());
+                    cyclistsLabels[1][1].setText(tmp.get(1).getTime() + "s");
+                }
+                if (tmp.size() >= 3) {
+                    cyclistsLabels[0][0].setText(tmp.get(0).getName());
+                    cyclistsLabels[0][1].setText(tmp.get(0).getTime() + "s");
+                    cyclistsLabels[1][0].setText(tmp.get(1).getName());
+                    cyclistsLabels[1][1].setText(tmp.get(1).getTime() + "s");
+                    cyclistsLabels[2][0].setText(tmp.get(2).getName());
+                    cyclistsLabels[2][1].setText(tmp.get(2).getTime() + "s");
+                }
             }
-            logger.log(Level.INFO, cyclist.getName() + " " + cyclist.getTime() + "s.");
+            j++;
+            logger.log(Level.INFO, cyclist.getName() + " ukonczyl");
             cyclistQueue.addAll(tmp);
+            if (j == 15) {
+                logger.log(Level.INFO, "koniec wyscigu");
+                try {
+                    TimeUnit.SECONDS.sleep(5);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.exit(0);
+            }
         }
     }
 }
