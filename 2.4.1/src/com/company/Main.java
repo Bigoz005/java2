@@ -8,12 +8,6 @@ import java.util.Locale;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        String[] correctNames = {"Agnieszka", "Darek", "Łukasz", "Órszula", "Stefania", "Ścibor", "Świętopełk", "Zyta"};
-        String[] names = {"Łukasz", "Ścibor", "Stefania", "Darek", "Agnieszka", "Zyta", "Órszula", "Świętopełk"};
-        sortStrings(Collator.getInstance(new Locale("pl", "PL")), names);
-        fastSortStrings(Collator.getInstance(new Locale("pl", "PL")), names);
-        fastSortStrings2(Collator.getInstance(new Locale("pl", "PL")), names);
     }
 
     Collator c = Collator.getInstance(new Locale("pl", "PL"));
@@ -31,29 +25,6 @@ public class Main {
         }
     }
 
-
-    // z anonimowym komparatorem
-    public static void fastSortStrings(Collator collator, String[] words) {
-
-        // tez zadziala bo Collator implementuje Comparator
-        // Arrays.sort(words, collator);
-
-        Arrays.sort(words, new Comparator<String>() {
-            @Override
-            public int compare(String s1, String s2) {
-                return collator.compare(s1, s2);
-            }
-        });
-    }
-
-    // z lambda
-    public static void fastSortStrings2(Collator collator, String[] words) {
-
-        Arrays.sort(words, (String s1, String s2) -> {
-            return collator.compare(s1, s2);
-        });
-    }
-}
 
     // z anonimowym komparatorem
     public static void fastSortStrings(Collator collator, String[] words) {
