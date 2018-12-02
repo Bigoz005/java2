@@ -3,7 +3,10 @@ package com.company;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Ordering;
 
+import java.util.Comparator;
+
 public class Student implements Comparable<Student> {
+
     private String name;
     private String surname;
     private int dateOfBirth;
@@ -13,32 +16,17 @@ public class Student implements Comparable<Student> {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getSurname() {
         return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
     }
 
     public int getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(int dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
     public int getHeight() {
         return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
     }
 
     public Student(String name, String surname, int dateOfBirth, int height) {
@@ -49,12 +37,19 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
-    public int compareTo(Student s) {
-        return ComparisonChain.start()
-                .compare(dateOfBirth, s.dateOfBirth, Ordering.natural().reverse())
-                .compare(surname, s.surname)
-                .compare(height, s.height)
-                .result();
+    public int compareTo(Student o) {
+        if (this.getDateOfBirth() != o.getDateOfBirth()) { //jezeli rozna data to posortuj
+            return ComparisonChain.start()
+                    .compare(this.getDateOfBirth(), o.getDateOfBirth())
+                    .result();
+        } else if (this.getSurname().charAt(0) != o.getSurname().charAt(0)) { //jezeli pierwsza litera inna to posortuj po nazwisku
+            return ComparisonChain.start()
+                    .compare(this.getSurname().charAt(0), o.getSurname().charAt(0))
+                    .result();
+        } else
+            return ComparisonChain.start()
+                    .compare(this.getHeight(), o.getHeight(), Ordering.natural().reverse()) // jezeli data ta sama i litera ta sama to sortuj po wysokosci
+                    .result();
     }
 
     @Override
