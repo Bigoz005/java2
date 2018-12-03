@@ -7,21 +7,33 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import java.util.Scanner;
 import java.util.Set;
 import javax.swing.*;
-import java.awt.*;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-public class Main {
+public class Main extends JPanel {
 
     public static void main(String[] args) {
 
-        //stworzenie okna
-        JLabel[][] label = createWindow();
+        /*
+        JFrame obj = new JFrame();
 
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        obj.setLocation(dim.width/2-obj.getSize().width/2, dim.height/2-obj.getSize().height/2);
+        obj.setBounds(10,10,710,632);
+        obj.setResizable(true);;
+        obj.setLocationRelativeTo(null);
+        obj.setVisible(true);;
+        obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+        String inputString =JOptionPane.showInputDialog(null,"Input a number to display");
+        int input = Integer.parseInt(inputString);
+
+        JOptionPane.showMessageDialog(null,"User entered: " + input);
+        */
         // odczytanie z pliku
         ReadFile odczyt = new ReadFile();
         String json = odczyt.odczyt();
@@ -48,17 +60,15 @@ public class Main {
         }
 
         Random losowanie = new Random();
-        Scanner in = new Scanner(System.in);
 
         Map<String, String> pytanieOdpowiedz = new LinkedHashMap<>();
 
         int liczbaLosowan = 10;
         double liczbaPunktow = 0;
+        String imie = JOptionPane.showInputDialog(null, "Podaj  imie: ");
+        String nazwisko = JOptionPane.showInputDialog(null, "Podaj nazwisko: ");
 
-        String imie = in.nextLine();
-        String nazwisko = in.nextLine();
-
-        System.out.println("******* Test START *******");
+        JOptionPane.showMessageDialog(null, "TEST START ");
         System.out.println();
         long startTime = System.nanoTime();
 
@@ -67,8 +77,7 @@ public class Main {
 
             // losowanie slowka
             int index = losowanie.nextInt(liczbaLosowan);
-            System.out.println("podaj angielskie tlumaczenie: " + listaKlucze.get(index));
-            String odpowiedz = in.nextLine();
+            String odpowiedz = JOptionPane.showInputDialog(null, "Podaj angielskie tlumaczenie: " + listaKlucze.get(index));
 
             // zapisanie do mapy zadanych pytan i udzielonych odpowiedzi
             pytanieOdpowiedz.put(listaKlucze.get(index), odpowiedz);
@@ -103,16 +112,12 @@ public class Main {
         String pytanieOdpowiedzJson = gson.toJson(pytanieOdpowiedz, pytanieOdpowiedzType);
         // zapisywanie odpowiedzi do pliku
         WriteFile zapis = new WriteFile();
-        System.out.println();
-        System.out.println("Trwa zapisywanie do pliku....");
+
         zapis.zapis(pytanieOdpowiedzJson, imie, nazwisko);
 
         System.out.println();
-        System.out.println("liczba punktów: " + liczbaPunktow);
-        System.out.println();
-        System.out.println(String.format("czas testu: %.2f", endTimeSekundy));
+        JOptionPane.showMessageDialog(null, String.format("liczba punktów: " + liczbaPunktow + "\nczas testu: %.2f", endTimeSekundy));
 
-        in.close();
     }
 
     static double Levenstein(String s1, String s2) {
@@ -143,53 +148,5 @@ public class Main {
         }
 
         return d[m][n];
-    }
-
-    private static JLabel[][] createWindow() {
-        JFrame frame = new JFrame("Test Angielski");
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setSize(300, 200);
-        frame.setLocation(dim.width / 2 - frame.getSize().width / 2, dim.height / 2 - frame.getSize().height / 2);
-        JPanel panel = new JPanel();
-        panel.setSize(300, 200);
-        GridLayout layout = new GridLayout(6, 3);
-
-        JLabel[][] labels = new JLabel[5][2];
-        for(int i=0; i<5; i++) {
-            for(int j=0; j<2; j++) {
-                labels[i][j] = new JLabel();
-            }
-        }
-
-        panel.add(new JLabel("")); //00
-        panel.add(new JLabel("Ang")); //01
-        panel.add(new JLabel("Pol"));//02
-
-        panel.add(new JLabel("1."));//10
-        panel.add(labels[0][0]);//11
-        panel.add(labels[0][1]);//12
-
-        panel.add(new JLabel("2."));//20
-        panel.add(labels[1][0]);//21
-        panel.add(labels[1][1]);//22
-
-        panel.add(new JLabel("3."));//30
-        panel.add(labels[2][0]);//31
-        panel.add(labels[2][1]);//32
-
-        panel.add(new JLabel("4."));//40
-        panel.add(labels[3][0]);//41
-        panel.add(labels[3][1]);//42
-
-        panel.add(new JLabel("5."));//50
-        panel.add(labels[4][0]);//51
-        panel.add(labels[4][1]);//52
-
-        panel.setLayout(layout);
-        frame.add(panel);
-
-
-        frame.setVisible(true);
-        return labels;
     }
 }
