@@ -1,14 +1,13 @@
 package com.company;
 
-
 import java.util.HashMap;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
-class MainTest {
+public class MainTest1 {
 
     @org.junit.Test
-    void containsKey() {
+    public void containsKey() {
         String key = "word";
         Integer value = 1;
 
@@ -21,7 +20,7 @@ class MainTest {
     }
 
     @org.junit.Test
-    void get() {
+    public void get() {
         String key = "word";
         Integer value = 1;
 
@@ -34,7 +33,7 @@ class MainTest {
     }
 
     @org.junit.Test
-    void getOrDefault() {
+    public void getOrDefault() {
         String key = "word";
         Integer value = 1;
 
@@ -48,7 +47,7 @@ class MainTest {
     }
 
     @org.junit.Test
-    void pullIfAbsent() {
+    public void pullIfAbsent() {
         String key = "word";
         Integer value = 1;
 
