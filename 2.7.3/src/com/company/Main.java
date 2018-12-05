@@ -7,14 +7,14 @@ import javafx.beans.value.ChangeListener;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.web.WebEngine;
+import javaFx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 */
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Main/* extends Application*/ {
+public class Main /*extends Application */{
     public static void main(String[] args){
         try {
             RandomNumbers test = new RandomNumbers(50, 0, 1);
