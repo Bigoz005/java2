@@ -19,7 +19,7 @@ public class Main{
 
         Publication Salesman = new WithAutograph(bb2, "*Slaps cover of the book*");
 
-        //Publication dziadyZDwomaAutografami = new WithAuthorAutograph(Salesman, "This bad boy can fit so many crimes!");
+        //Publication twoAutographs = new WithAuthorAutograph(Salesman, "This bad boy can fit so many crimes!");
 
         System.out.println(b1.toString());
         System.out.println(b2.toString());
