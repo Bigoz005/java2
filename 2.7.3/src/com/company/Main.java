@@ -17,7 +17,7 @@ import java.io.IOException;
 public class Main /*extends Application */{
     public static void main(String[] args){
         try {
-            RandomNumbers test = new RandomNumbers(50, 0, 1);
+            RandomNumbers test = new RandomNumbers(1000, 0, 1);
             test.closeDataStreams();
         } catch (FileNotFoundException e){
             System.out.println(e.getMessage());
