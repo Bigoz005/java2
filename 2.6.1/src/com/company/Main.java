@@ -7,19 +7,23 @@ public class Main{
 
         Publication bb1 = new WithNormalCover(b1);
         Publication bb2 = new WithHardCover(b2);
-
+        //Tylko jedna okladka
         //Publication fail = new WithHardCover(bb1);
 
+        //Nie mozna oblozyc obwoluta ksiazki, bez twardej okladki
         //Publication fakeBook = new WithWrapper(bb1);
 
         Publication bbb2 = new WithWrapper(bb2);
-        Publication test = new WithNormalCover(bbb2);
+        //Okladka moze byc tylko jedna
+        //Publication test = new WithNormalCover(bbb2);
 
+        //Obwoluta moze byc tylko jedna
         //Publication reject = new WithWrapper(bbb2);
 
         Publication Salesman = new WithAutograph(bb2, "*Slaps cover of the book*");
 
-        //Publication twoAutographs = new WithAuthorAutograph(Salesman, "This bad boy can fit so many crimes!");
+        //Tylko jeden autograf
+        //Publication Salesman2 = new WithAutograph(Salesman, "This bad boy can fit so many crimes!");
 
         System.out.println(b1.toString());
         System.out.println(b2.toString());

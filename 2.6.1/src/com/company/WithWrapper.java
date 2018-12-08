@@ -8,7 +8,7 @@ public class WithWrapper extends BookDekorator{
             try {
                 throw new NoHardCoverException();
             } catch (NoHardCoverException e) {
-                System.out.println("Nie można obłożyć obwolutą książki, bez twardej okładkii!");
+                System.out.println("Nie można obłożyć obwolutą książki, bez twardej okładki!");
             }
             System.exit(0);
         }
