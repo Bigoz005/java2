@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller">
+   <children>
+      <CheckBox fx:id="showColorCheckBox" layoutX="24.0" layoutY="551.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" text="Show color" onAction="#showPickedColorName"/>
+      <Separator layoutX="24.0" layoutY="539.0" prefHeight="5.0" prefWidth="557.0" />
+      <Slider fx:id="redSlider" blockIncrement="5.0" layoutX="24.0" layoutY="501.0" showTickLabels="true" showTickMarks="true" value="130" max="255" />
+      <Slider fx:id="greenSlider" blockIncrement="5.0" layoutX="223.0" layoutY="501.0" showTickLabels="true" showTickMarks="true" value="130" max="255" />
+      <Slider fx:id="blueSlider" blockIncrement="5.0" layoutX="441.0" layoutY="501.0" showTickLabels="true" showTickMarks="true" value="130" max="255" />
+      <Label layoutX="61.0" layoutY="471.0" text="Red" />
+      <Label layoutX="271.0" layoutY="471.0" text="Green" />
+      <Label layoutX="486.0" layoutY="471.0" text="Blue" />
+      <Label fx:id="pickedColor" layoutX="177.0" layoutY="556.0" text="Label" />
+      <Pane fx:id="colorPane" layoutX="128.0" layoutY="99.0" prefHeight="304.0" prefWidth="330.0" />
+      <Label fx:id="redLabel" layoutX="80.0" layoutY="448.0" text="130" />
+      <Label fx:id="greenLabel" layoutX="283.0" layoutY="448.0" text="130" />
+      <Label fx:id="blueLabel" layoutX="499.0" layoutY="448.0" text="130" />
+   </children>
+</Pane>
